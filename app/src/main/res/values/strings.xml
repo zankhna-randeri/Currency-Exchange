@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Currency Conversion Exchange</string>
+    <string name="dollar_amt">Dollar Amount:</string>
+    <string name="convert_to">Convert to:</string>
+    <string name="txt_apply">Apply</string>
+    <string name="txt_close">Close</string>
+</resources>
