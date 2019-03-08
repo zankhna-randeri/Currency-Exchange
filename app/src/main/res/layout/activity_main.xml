@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytExchange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtLableAmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/dollar_amt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/txtLableAmt"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_medium" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/txtLableCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/convert_to"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_medium" />
+
+        <TextView
+            android:id="@+id/txtCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_toRightOf="@id/txtLableCurrency"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_medium" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="@string/txt_apply"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_medium" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="@string/txt_close"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_medium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_medium" />
+</LinearLayout>
